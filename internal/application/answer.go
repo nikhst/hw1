@@ -18,7 +18,6 @@ func Answer(w http.ResponseWriter, r *http.Request) {
 	response, err := rpn.Calc(expression)
 	if err != nil {
 		http.Error(w, "Expression is not valid", http.StatusUnprocessableEntity)
-		//	fmt.Println(expression)
 		return
 	}
 
