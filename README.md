@@ -29,7 +29,7 @@ Port number is not a decimal number between 0 and 65535, третий bad hostna
 
 ```curl -X POST -d 'input="\2+2"' http://localhost:8080/api/v1/calculate```<br>
 ``` Expression is not valid ``` <br>
-(если заменить текст ошибки на другой текст, например, what, то будет показываться what, а это значит, что в expression попадает не исходная строка, а какое-то другое выражение)
+(если заменить текст ошибки на другой текст, например, what, то будет показываться what, а это значит, что в expression попадает не исходная строка, а какое-то другое выражение, то есть что-то не так не с моей стороны, а c curl)
 
 ```curl -X POST -d 'input=\"2+2"\' http://localhost:8080/api/v1/calculate``` <br>
 ```curl: (2) no URL specified```
